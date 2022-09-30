@@ -13,4 +13,8 @@ Assignment2 Blockchain Technology
    ![image](https://user-images.githubusercontent.com/80448087/193301035-7d33a519-660c-4362-97ca-7d17b973bd51.png)
 
  License
+
+
+
+
 Assignment2_BT is released under the MIT License.
