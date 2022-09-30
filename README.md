@@ -1,7 +1,7 @@
 # Assignment2_BT
 Assignment2 Blockchain Technology
 
-   --AITU_Nurai ERC20 token
+   --AITU_Nurai ERC20 token--
    
    
    - Usage
@@ -16,7 +16,4 @@ Assignment2 Blockchain Technology
 
    - License
 
-
-
-
-Assignment2_BT is released under the MIT License.
+   Assignment2_BT is released under the MIT License.
