@@ -11,3 +11,6 @@ Assignment2 Blockchain Technology
    - Examples
    ![image](https://user-images.githubusercontent.com/80448087/193301082-6336f0e5-a620-4e11-b9fc-8874b1604ded.png)
    ![image](https://user-images.githubusercontent.com/80448087/193301035-7d33a519-660c-4362-97ca-7d17b973bd51.png)
+
+ License
+Assignment2_BT is released under the MIT License.
