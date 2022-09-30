@@ -1,0 +1,643 @@
+{
+	"id": "d4f93ccafbe738559b36334216ffcd17",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"TransferToken.sol": {
+				"content": "pragma solidity ^0.8.17;\r\n\r\ncontract TransferToken {\r\n    function transfer() external {}\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"TransferToken.sol": {
+				"TransferToken": {
+					"abi": [
+						{
+							"inputs": [],
+							"name": "transfer",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"TransferToken.sol\":28:92  contract TransferToken {... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"TransferToken.sol\":28:92  contract TransferToken {... */\n      mstore(0x40, 0x80)\n      callvalue\n      dup1\n      iszero\n      tag_1\n      jumpi\n      0x00\n      dup1\n      revert\n    tag_1:\n      pop\n      jumpi(tag_2, lt(calldatasize, 0x04))\n      shr(0xe0, calldataload(0x00))\n      dup1\n      0x8a4068dd\n      eq\n      tag_3\n      jumpi\n    tag_2:\n      0x00\n      dup1\n      revert\n        /* \"TransferToken.sol\":58:89  function transfer() external {} */\n    tag_3:\n      tag_4\n      tag_5\n      jump\t// in\n    tag_4:\n      stop\n    tag_5:\n      jump\t// out\n\n    auxdata: 0xa2646970667358221220393a4675d113b59df36df6d130e6c694c1e2881948bc8e0aa7db177ef912ba8264736f6c63430008110033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50606d80601d6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80638a4068dd14602d575b600080fd5b60336035565b005b56fea2646970667358221220393a4675d113b59df36df6d130e6c694c1e2881948bc8e0aa7db177ef912ba8264736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x6D DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x8A4068DD EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0x35 JUMP JUMPDEST STOP JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 CODECOPY GASPRICE CHAINID PUSH22 0xD113B59DF36DF6D130E6C694C1E2881948BC8E0AA7DB OR PUSH31 0xF912BA8264736F6C6343000811003300000000000000000000000000000000 ",
+							"sourceMap": "28:64:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {
+								"@transfer_5": {
+									"entryPoint": 53,
+									"id": 5,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b506004361060285760003560e01c80638a4068dd14602d575b600080fd5b60336035565b005b56fea2646970667358221220393a4675d113b59df36df6d130e6c694c1e2881948bc8e0aa7db177ef912ba8264736f6c63430008110033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x8A4068DD EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0x35 JUMP JUMPDEST STOP JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 CODECOPY GASPRICE CHAINID PUSH22 0xD113B59DF36DF6D130E6C694C1E2881948BC8E0AA7DB OR PUSH31 0xF912BA8264736F6C6343000811003300000000000000000000000000000000 ",
+							"sourceMap": "28:64:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;58:31;;;:::i;:::-;;;:::o"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "21800",
+								"executionCost": "75",
+								"totalCost": "21875"
+							},
+							"external": {
+								"transfer()": "122"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 28,
+									"end": 92,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220393a4675d113b59df36df6d130e6c694c1e2881948bc8e0aa7db177ef912ba8264736f6c63430008110033",
+									".code": [
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "CALLVALUE",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "ISZERO",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "1"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "REVERT",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "tag",
+											"source": 0,
+											"value": "1"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "POP",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "CALLDATASIZE",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "LT",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "2"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "CALLDATALOAD",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH",
+											"source": 0,
+											"value": "E0"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "SHR",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH",
+											"source": 0,
+											"value": "8A4068DD"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "EQ",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "3"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "tag",
+											"source": 0,
+											"value": "2"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 28,
+											"end": 92,
+											"name": "REVERT",
+											"source": 0
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"name": "tag",
+											"source": 0,
+											"value": "3"
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "5"
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"jumpType": "[in]",
+											"name": "JUMP",
+											"source": 0
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"name": "tag",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"name": "STOP",
+											"source": 0
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"name": "tag",
+											"source": 0,
+											"value": "5"
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 58,
+											"end": 89,
+											"jumpType": "[out]",
+											"name": "JUMP",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"TransferToken.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {
+							"transfer()": "8a4068dd"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"transfer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"TransferToken.sol\":\"TransferToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"TransferToken.sol\":{\"keccak256\":\"0x10338549ba7381b87a472cd7e4cc33f551278a21573f3bca4f950d901bb442ad\",\"urls\":[\"bzz-raw://4ebaaca2218d13ec703b1877a70b4e07789d5ba636951b267d97a4f76f4a0670\",\"dweb:/ipfs/QmWJ6eqHZDnnQLBZ9r4ejcfAZKhqivy3yLrjFVK3sKfeRi\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> TransferToken.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "TransferToken.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"TransferToken.sol": {
+				"ast": {
+					"absolutePath": "TransferToken.sol",
+					"exportedSymbols": {
+						"TransferToken": [
+							6
+						]
+					},
+					"id": 7,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".17"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:24:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "TransferToken",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 6,
+							"linearizedBaseContracts": [
+								6
+							],
+							"name": "TransferToken",
+							"nameLocation": "37:13:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"body": {
+										"id": 4,
+										"nodeType": "Block",
+										"src": "87:2:0",
+										"statements": []
+									},
+									"functionSelector": "8a4068dd",
+									"id": 5,
+									"implemented": true,
+									"kind": "function",
+									"modifiers": [],
+									"name": "transfer",
+									"nameLocation": "67:8:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 2,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "75:2:0"
+									},
+									"returnParameters": {
+										"id": 3,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "87:0:0"
+									},
+									"scope": 6,
+									"src": "58:31:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 7,
+							"src": "28:64:0",
+							"usedErrors": []
+						}
+					],
+					"src": "0:92:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
